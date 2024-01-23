@@ -1,0 +1,311 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+                    window.location.hash = hash;
+                });
+            } 
+        });
+    });
+</script>
+</head>
+<body style="background-color: grey;">
+    
+    <div class="banner" id="home">
+
+        <div class="navbar">
+            <div class="logo">Demon Slayer</div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#news"> NEWS </a></li>    
+                <li><a href="#about"> ABOUT US </a></li>    
+                <li><a href="#gallery"> GALLERY </a></li>    
+                <li><a href="#testimony"> TESTIMONY </a></li>    
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <h1> Welcome To Demon Slaying Website </h1>
+
+
+            <div class="buttons">
+                <button type="button"><span></span> READ MORE </button>
+                <button type="button"><span></span> WATCH MORE </button>
+            </div>
+        </div>
+    </div>
+    
+<!--for news.html-->
+<div class="blog-section" id="news">
+    <div class="section-content">
+        <div class="title">
+            <h2>DEMON SLAYER</h2>
+            <h3>Seasons</h3>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="image-section">
+                    <img src="img/S1.jpg">
+                </div>
+                <div class="article">
+                    <h4>Season 1</h4>
+                    <p>Tanjiro Kamado lives with his family a happy and 
+                        peaceful life in the snowy mountains, providing 
+                        for them by selling charcoal at the nearby town.
+                        One day, he returns home only to find his entire
+                        family slaughtered in a demon attack, with the
+                        exception of his younger sister, Nezuko Kamado,
+                        who has begun to transform into a demon herself.
+                        A Demon Slayer, Giyu Tomioka, appears to kill
+                        Nezuko, but Tanjiro does his best to try and
+                        defend her.</p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">More</a>
+                </div>
+                <div class="posted-date">
+                    <p>2019</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="img/S2.jpg">
+                </div>
+                <div class="article">
+                    <h4>Season 2</h4>
+                    <p> Mugen Train and Entertainment District Arcs</br></br>
+                        Flame Hashira Kyojuro Rengoku is tasked with 
+                        inding an elusive demon plaguing a town.
+                        Believing the demon is connected to over forty
+                        disappearances on the Mugen train, he sets out
+                        to find and kill it. He meets a pair of bento
+                        vendors and advises them on the risk of demons,
+                        before he soon locates the train.</p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">More</a>
+                </div>
+                <div class="posted-date">
+                    <p>2021</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="img/S3.webp">
+                </div>
+                <div class="article">
+                    <h4>Season 3</h4>
+                    <p>Swordsmith Village Arc </br></br>
+                        After their battle with Gyutaro and Daki, the
+                        Upper Rank Six siblings, Tanjiro, Zenitsu,
+                        Inosuke, and Nezuko are found by the Kakushi.
+                        In the Infinity Castle, Muzan Kibutsuji summons
+                        the remaining five Upper Rank demons – Akaza,
+                        Upper Five Gyokko, Upper Four Hantengu, Upper Two 
+                        Doma, and Upper One Kokushibo.</p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">More</a>
+                </div>
+                <div class="posted-date">
+                    <p>2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--for about us-->
+
+<div class="about-section" id="about">
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>This page Contains Demon Slayer History</p>
+    </div>
+
+    <div class=" container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/S.webp">
+            </div>
+            <div class="about-content">
+                <h2>Demon Slayer History</h2>
+                <p>The Demon Slayer Corps was founded approximately a
+                    thousand years ago during the Heian Era. This
+                    occurred after Muzan Kibutsuji, a distant relative
+                    of the current Ubuyashiki family, inadvertently
+                    became the very first demon. As a result, a curse
+                    befell the Ubuyashiki bloodline, causing subsequent
+                    generations to suffer from premature deaths. Seeking
+                    guidance, the Ubuyashiki family heeded the advice of
+                    a priest and established the Corps. They took on the
+                    responsibility of leading the battle against Muzan
+                    and his demons, believing that by eradicating demons
+                    from the world, they could break the curse that
+                    plagued their bloodline.</p>
+
+                    <a href="#" class="read-more">Read More</a>
+                
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+<!--Gallery Page-->
+
+<div class="gallery" id="gallery">
+
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+    <div class="gallery-container">
+        <h1>OUR PHOTO GALLERY</h1>
+            <div class="top-content">
+                <h3>Photo Gallery</h3>
+                <label for="check1">All Season</label>
+                <label for="check2">Season 1</label>
+                <label for="check3">Season 2</label>
+                <label for="check4">Season 3</label>
+            </div>
+
+            <div class="photo-gallery">
+
+                <div class="pic Events">
+                    <img src="img/s1-1.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/s2-1.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/s3-1.webp">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/s1-2.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/s2-2.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/s3-2.webp">
+                </div>
+                
+                <div class="pic Events">
+                    <img src="img/s1-3.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/s2-3.png">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/s3-3.webp">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/s1-4.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/s2-4.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/s3-4.jpg">
+                </div>
+
+            </div>
+    </div>
+</div>
+
+<!--Testimony-->
+
+
+
+<div class="somediv" id="testimony">
+</div>
+
+
+<div class="all">
+<div class="title">
+    <h2 class="hh2 MID-TOP"> Testimonials</h2>
+     <div class="clear"></div>
+</div>
+
+<div class="squair">
+    <img class="img-item MID-TOP " src="img/Kamisato Ayaka 2.png" alt="picture">
+    <h2 class="h22 MID">Kamisato Ayaka </h2>
+    <P class="MID-BUTTOM">A blade is like a tea leaf - only those who sample it many times can become privy to its nature.</P>
+</div> 
+<div class="squair">
+    <img class="img-item MID-TOP " src="img/Raiden Shogun 4.png" alt="picture">
+    <h2 class="h22 MID">Raiden Shogun </h2>
+    <P class="MID-BUTTOM">All the world holds dear is but a backdrop of constant motion. I stand before it alone and unchanging.</P>
+</div> 
+<div class="squair">
+    <img class="img-item MID-TOP " src="img/Ayato 3.png" alt="picture">
+    <h2 class="h22 MID">Kamisato Ayato </h2>
+    <P class="MID-BUTTOM">Everything comes at a cost. And if you aspire to things that most could never dream of.</P>
+</div> 
+</div>
+
+<!--Footer-->
+
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="copyright">Manage and Created by Kyle @2023</p>
+    </footer>
+</div>
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll=function(){scrollFunction()};
+    function scrollFunction(){
+if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+mybutton.style.display="block";
+}else{
+    mybutton.style.display="none";
+}
+    }
+</script>
+
+</body>
+</html>
